@@ -161,7 +161,7 @@ export default function RegistrationForm({ qrCode, onRegistrationComplete }: Reg
         {isSubmitting ? (
           <ActivityIndicator color="#fff" />
         ) : (
-          <Text style={styles.buttonText}>
+          <Text style={[styles.buttonText, { fontSize: 13 }]}>
             {showSuccess ? '✅ Registered Successfully!' : '✅ Register QR Code'}
           </Text>
         )}

@@ -15,19 +15,28 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
+        tabBarStyle: {
+          height: 65,
+          paddingBottom: 10,
+          paddingTop: 10,
+        },
+        tabBarItemStyle: {
+          justifyContent: 'center',
+          alignItems: 'center'
+        }
       }}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Scanner',
-          tabBarIcon: ({ color }) => <IconSymbol size={24} name="qrcode" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={32} name="scan.qrcode" color={color} />,
         }}
       />
       <Tabs.Screen
         name="explore"
         options={{
           title: 'About',
-          tabBarIcon: ({ color }) => <IconSymbol size={24} name="info.circle.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={32} name="info.circle.fill" color={color} />,
         }}
       />
     </Tabs>

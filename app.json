@@ -40,7 +40,6 @@
           "recordAudioAndroid": true
         }
       ],
-      "expo-barcode-scanner",
       [
         "expo-splash-screen",
         {
